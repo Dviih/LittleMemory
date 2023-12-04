@@ -1,7 +1,7 @@
 #include "littlememory.h"
 
-void* set(void* ptr, unsigned char value, unsigned long long size) {
-	int i = 0;
+void* set(void* restrict ptr, const unsigned char value, const unsigned long long size) {
+	unsigned int i = 0;
 
 	unsigned char* p = (unsigned char*) ptr;
 
