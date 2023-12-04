@@ -1,6 +1,7 @@
 #include "littlememory.h"
 
-void* allocate(unsigned long long size) {
+chunk_t heap;
+
 	chunk_t* chunk = &heap;
 
 	while (chunk->next != 0) {

@@ -7,8 +7,6 @@ typedef struct chunk_t {
 	struct chunk_t* prev;
 } chunk_t;
 
-chunk_t heap;
-
 void* allocate(unsigned long long);
 void deallocate(void*);
 void reallocate(void*, unsigned long long);
